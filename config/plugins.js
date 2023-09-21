@@ -1,4 +1,4 @@
-module.exports = ({ env }) => ({
+module.exports = {
   // ...
   translate: {
     enabled: true,
@@ -8,9 +8,9 @@ module.exports = ({ env }) => ({
       // Pass credentials and other options to the provider
       providerOptions: {
         // your API key - required and wil cause errors if not provided
-        apiKey: 'Your API Key Here',
+        apiKey: 'ENTER_YOUR_API_KEY_HERE',
         // use custom api url - optional
-        apiUrl: env('DEPL_API_KEY'),
+        apiUrl: 'https://api-free.deepl.com',
         // use custom locale mapping (for example 'en' locale is deprecated so need to choose between 'EN-GB' and 'EN-US')
         localeMap: {
           // use uppercase here!
@@ -28,5 +28,4 @@ module.exports = ({ env }) => ({
     },
   },
   // ...
-});
-
+}
